@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Node App</title>
+</head>
+
+<body>
+    
+    <form method="post" action="/brandname/add">
+        <label for="brandname">Brand Name</label>
+        <input type="text" name="brandName">
+        <label for="modelname">Model Name</label>
+        <input type="text" name="modelname">
+        <label for="price">Price</label>
+        <input type="number" name="price">
+        <input type="submit" value="Add">
+    </form>
+    <h4>Brands:</h4>
+    <ul>
+        <% items.forEach(function(brandname) { %>
+            <li>
+                <%= brandname.brandName %>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>
