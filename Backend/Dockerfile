@@ -1,10 +1,10 @@
-FROM node:alpine
+FROM node:16.13.2
 
 WORKDIR /usr/src/app
 
-COPY package*.json .
+COPY ./package*.json ./
 
-RUN npm ci
+RUN npm install
 
 COPY . .
 

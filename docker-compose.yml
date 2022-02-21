@@ -1,14 +1,15 @@
-version: "3.9"
+version: "2.2"
 services:
   next-app:
-    image: next-app
-    stdin_open: true
+    container_name: next-app
+    build: ./front-end
     ports: 
       - "3000:3000"
     networks:
       - mern-app
   api-server:
-    image: api-server
+    container_name: api-server
+    build: ./Backend
     ports:
       - "3080:3080"
     networks:

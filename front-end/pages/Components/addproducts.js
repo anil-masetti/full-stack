@@ -34,7 +34,7 @@ export default function AddProduct (){
           <a  className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">Add Products</a>
         </Link>
      
-        <Link href="/">
+        <Link href="/Components/fetchproducts">
           <a  className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">View Products</a>
         </Link>
       
